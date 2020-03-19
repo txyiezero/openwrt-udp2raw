@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=udp2raw-tunnel
-PKG_VERSION:=20180428.0
+PKG_VERSION:=20200319.dns
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/wangyu-/udp2raw-tunnel.git
-PKG_SOURCE_VERSION:=2c2d897bc2140dbe77cea99f92942425632088e6
+PKG_SOURCE_URL:=https://github.com/txyiezero/udp2raw-tunnel.git
+PKG_SOURCE_VERSION:=cc9896473fc5bc3ac87b7e1ae79105c59d7afc56
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.xz
 
@@ -31,7 +31,7 @@ define Package/udp2raw-tunnel
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=Tunnel which turns UDP Traffic into Encrypted FakeTCP/UDP/ICMP Traffic
-	URL:=https://github.com/wangyu-/udp2raw-tunnel
+	URL:=https://github.com/txyiezero/udp2raw-tunnel
 endef
 
 define Package/udp2raw-tunnel/description
